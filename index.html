@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DoWhile</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="avatar">
+        <span>
+          <img src="./images/build.svg" alt="selo" />
+        </span>
+        <img
+          src="./images/foto.png"
+          alt="Foto de um personagem desconhecido de animação"
+        />
+      </div>
+      <h1 id="userName">Willian Sartori</h1>
+      <a href="#">Link</a>
+      <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
+
+      <ul>
+        <li class="youtube">
+          <a href="http://youtube.com" target="_blank"
+            ><img src="./images/YouTube.svg" alt="YouTube Icon" />
+          </a>
+        </li>
+        <li class="instagram">
+          <a href="http://instagram.com" target="_blank"
+            ><img src="./images/Instagram.svg" alt="Instagram Icon" />
+          </a>
+        </li>
+        <li class="facebook">
+          <a href="http://facebook.com" target="_blank"
+            ><img src="./images/Facebook.png" alt="Facebook Icon" />
+          </a>
+        </li>
+        <li class="twitter">
+          <a href="http://twitter.com" target="_blank"
+            ><img src="./images/Twitter.svg" alt="Twitter Icon" />
+          </a>
+        </li>
+      </ul>
+    </div>
+
+<script>
+
+    const links = {
+        
+             github: "sartigui",
+             youtube: "wsartoric",
+             facebook: "sartoric",
+             instagram: "sartoric",
+             twitter: "sartoric" 
+    }
+
+    function changeSocialMediaLinks() {
+        //document.getElementById('userName').textContent = "Olívia";
+        //userName.textContent = "Olívia";
+        for (let li of links.children) {
+            const social = li.getAttribute('class')
+            //alert(li.children.href)
+            li.children[0].href = `https://${social}.com/${links[social]}`
+        }
+    }
+
+    changeSocialMediaLinks();
+
+</script>
+
+  </body>
+</html>
