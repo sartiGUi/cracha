@@ -33,12 +33,12 @@ function getGitHubProfileInfos () {
         userBio.textContent = data.bio;
         userLink.href = data.html_url;
         userImage.src = data.avatar_url;
-        user.Login.href = data.login;
+        userLogin.textContent = data.login;
 
 } )
 
 }
-getGitHubProfileInfos(url)
+getGitHubProfileInfos()
 
     //fetch: acessa a url e recebe a resposta
     //then = promessa. 

@@ -4,7 +4,6 @@
 }
 
 body h1 {
-
     font-size: 1.5rem;
 }
 
@@ -21,8 +20,11 @@ body {
 
 .content {
     background-image: url('./images/Background.svg');
-    width: 375px;
-    height: 812px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
 
 .avatar {
@@ -53,6 +55,13 @@ a {
     color: var(--grey);
 }
 
+p .userBio {
+    line-height: 60px;
+    display: block;
+    width: 16.37rem;
+    height: 3rem;
+}
+
 ul {
     display: flex;
     list-style: none;
@@ -71,10 +80,8 @@ p {
     text-align: center;
     line-height: 24px;
     font-weight: 400;
-    width: 16.37rem;
-    height: 3rem;
-}
 
+}
 
 ul {
     margin-top: 4rem;
